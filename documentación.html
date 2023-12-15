@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación</title>
+    <style>
+      a:hover{
+        color: #E20019;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: aqua;
+      }
+        * {
+          box-sizing: border-box;
+        }
+        
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        .menu a:hover{
+            background-color: red;
+        }
+        .menu a {
+          border-radius: 20px;
+          background-color:#051626;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+        }
+        
+        .main {
+          border-radius: 20px;
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right {
+          border-radius: 20px;
+          background-color:#051626;
+          float: left;
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+<body style="font-family:sans-serif;color:#ffffff;background-color:#0c2236">
+
+    <div style="background-color:#E20019;padding:15px;text-align:center;">
+      <img src="samba.png" alt="samba" width="100%">
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="inici.html">Inicio</a>
+        <a href="queEsSamba.html">¿Qué es Samba?</a>
+        <a href="descargaSamba.html">Descarga Samba</a>
+        <a href="documentación.html" style="background-color: red;">Documentación</a>
+      </div>
+    
+      <div class="main">
+        <h2 style="color: rgb(211, 23, 23);">Documentación</h2>
+        <p>La documentación (y en particular las páginas de manual) que figuran en esta página web se han tomado de la última versión de desarrollo de Samba. Si está utilizando una versión anterior de Samba, es posible que encuentre algunas diferencias.</p>
+        <h2 style="font-size: 20px;">Documentación</h2>
+        <ul>
+            <li> Samba <a href="https://wiki.samba.org/index.php/Main_Page">Wiki</a> es una documentación completa y ciertamente la más actualizada sobre Samba.</li>
+            <li><a href="https://wiki.samba.org/index.php/Presentations">Presentaciones</a> de los miembros del equipo Samba</li>
+            <li><a href="https://www.samba.org/samba/docs/man/">Páginas man de Samba en HTML</a></li>
+            <li><a href="https://www.samba.org/samba/docs/GPL.html">Licencia Samba (GNU GPL)</a></li>
+            </ul>  
+        <h2 style="font-size: 20px;">Documentos misceláneos más antiguos (pero con suerte aún válidos)</h2>
+        <ul>
+            <li> <a href="http://www.ubiqx.org/cifs/">Implementación de CIFS </a> Implementación de CIFS ; un libro en línea que describe el funcionamiento y la implementación del conjunto de protocolos CIFS.</li>
+            <li> Versión en PDF del capítulo <a href="https://www.samba.org/samba/docs/Samba24Hc13.pdf">Técnicas de solución de problemas</a> de la segunda edición de Sam's Teach Yourself Samba in 24 Hours (diciembre de 2001)</li>
+            <li><a href="https://www.oregontechsupport.com/samba.html">El CÓMO no oficial de Samba, por David Lechnyr</a></li>
+            <li><a href="https://tldp.org/HOWTO/Samba-Authenticated-Gateway-HOWTO.html">Cómo hacer una puerta de enlace autenticada por Samba</a></li>
+            <li><a href="https://www.samba.org/samba/docs/10years.html"> Diez años de samba</a></li>
+            <li><a href="https://atmarkit.itmedia.co.jp/flinux/special/samba3/samba3a.html">Introducción a Samba 3.0</a> por Motonobu Takahashi (escrito en japonés).</li>
+            <li><a href="https://www.samba.org/samba/docs/using_samba/toc.html">>Usando Samba, 2ed, O'Reilly & Associates</a> (febrero de 2003). (Enero de 2007: se publicó la tercera edición).</li>
+           <li><a href="https://www.samba.org/samba/docs/SambaIntro.html">Una introducción a la samba</a>a</li>
+           <li><a href="https://www.samba.org/cifs/docs/what-is-smb.html">¿Qué es la PYME?</a></li>
+           <li><a href="https://www.samba.org/cifs/">¿Qué es CIFS?</a></li>
+            <li> Cómo usar <a href="https://www.samba.org/samba/docs/swat_ssl.html">SWAT con seguridad SSL (actualizado para OpenSSL)</a></li>
+            </ul>
+            <h2>Traducciones</h2>
+            <ul>
+                <li> <a href="http://www.samba.gr.jp/project/translation/Samba3-HOWTO/">Colección Samba HOWTO en japonés (¡documentación antigua!)</a></li>
+                <li><a href="https://smb-conf.ru/">Página de manual de Samba 3 smb.conf en ruso (¡documentación antigua!)</a></li>
+                <li><a href="http://samba-doc.ru/samba3example/index.html">Samba 3 por ejemplo en ruso (documentación antigua antigua)</a></li>
+                </ul>
+                <h2>Contribuyendo</h2>
+        <p>Las contribuciones siempre son bienvenidas a la documentación de Samba. Como todo lo relacionado con Samba, estos documentos son mantenidos por miembros de la comunidad Samba y cualquier ayuda es muy apreciada. Las contribuciones pueden ser simples correcciones de errores tipográficos o un artículo sobre características nuevas o no documentadas anteriormente.</p>
+        <p>La documentación se encuentra en el directorio docs-xml de cada rama de versión. Consulte <a href="https://wiki.samba.org/index.php/Creating_a_Samba_patch_series">Samba Wiki</a> Samba Wiki para obtener información sobre las ramas de lanzamiento y una breve introducción a git.</p>
+        <p>Los "parches" de documentación se pueden informar a través de <a href="https://bugzilla.samba.org/">bugzilla</a>. Desde la página de inicio de bugzilla, seleccione 'Ingresar un nuevo informe de error', elija la rama Samba apropiada y, finalmente, en el formulario de informe de error, especifique 'Documentos' en el menú de componentes. No olvide adjuntar las correcciones de su documentación a los archivos fuente XML de Docbook (no a las páginas de manual generadas).</p>
+      </div>
+      <div class="right">
+        <img src="samba.png" alt="samba2" width="50%">
+        <h2 style="color: rgb(211, 23, 23);">Sobre</h2>
+        <p>Hoy en dia Samba necesita un <a href="https://www.samba.org/samba/donations.html">dolar</a> y no un trozo de pizza. UwU</p>
+      </div>
+      <div class="right" style="font-weight: bold;color:rgb(211, 23, 23)">
+        <h2>Sitios relacionados</h2>
+        <p><a href="https://cwrap.org/">CWRAP</a></p>
+        <p><a href="https://tdb.samba.org/">TBD</a></p>
+        <p><a href="https://tevent.samba.org/">TEVENT</a></p>
+        <p><a href="https://ldb.samba.org/">LBD</a></p>
+      </div>
+    </div>
+    
+    <div style="color: rgb(211, 23, 23);background-color:#051626;text-align:center;padding:10px;margin-top:7px;"><img src="samba.png" width="10%">© copyright Alejandro Rodriguez Y Nerea Flores</div>
+    
+    </body>
+</html>

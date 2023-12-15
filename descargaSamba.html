@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga</title>
+    <style>
+      a:hover{
+        color: #E20019;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: aqua;
+      }
+        * {
+          box-sizing: border-box;
+        }
+        
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        .menu a:hover{
+            background-color: red;
+        }
+        .menu a {
+          border-radius: 20px;
+          background-color:#051626;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+        }
+        
+        .main {
+          border-radius: 20px;
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right {
+          border-radius: 20px;
+          background-color:#051626;
+          float: left;
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+<body style="font-family:sans-serif;color:#ffffff;background-color:#0c2236">
+
+    <div style="background-color:#E20019;padding:15px;text-align:center;">
+      <img src="samba.png" alt="samba" width="100%">
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="inici.html">Inicio</a>
+        <a href="queEsSamba.html">¿Qué es Samba?</a>
+        <a href="descargaSamba.html" style="background-color: red;">Descarga Samba</a>
+        <a href="documentación.html">Documentación</a>
+      </div>
+    
+      <div class="main">
+        <h2 style="color: rgb(211, 23, 23);">Descarga Samba</h2>
+        <p>El código fuente de Samba se distribuye <a href="https://download.samba.org/pub/samba/">a través de https</a>. Ver el área de descarga a través de HTTPS . El archivo que probablemente desee se llama <a href="https://download.samba.org/pub/samba/samba-latest.tar.gz">samba-lastest.tar.gz</a> . Las versiones antiguas están disponibles en los <a href="https://download.samba.org/pub/samba/old-versions/">archivos de Samba.</a></p>
+        <p>La <a href="https://download.samba.org/pub/samba/samba-pubkey.asc">clave  pública GPG de distribución de Samba</a> se puede utilizar para verificar que las versiones actuales no hayan sido manipuladas. Usando GnuPG, simplemente descargue la distribución fuente de Samba, la firma tarball y la clave pública de la distribución Samba. Entonces corre</p>
+        <pre style="text-align: left;">
+        $ gpg --import samba-pubkey.asc
+        $ gunzip samba-<em>version</em>.tar.gz
+        $ gpg --verify samba-<em>release</em>.tar.asc
+        gpg: Signature made Tue 20 Nov 2007
+        07:12:04 PM CST using \
+        DSA key ID 6568B7EA
+        gpg: Good signature from "Samba Distribution Verification Key \
+        ‹samba-bugs@samba.org›
+          </pre>
+        <p>Se recomienda que también revise la <a href="https://www.samba.org/samba/history/security.html">lista de parches</a> para las versiones actuales. Para obtener información sobre las versiones de seguridad de Samba, consulte nuestra <a href="https://www.samba.org/samba/history/security.html">página de seguridad</a></a> .
+        </p>
+          <h2 >binarios</h2>
+        <p>Todas las principales distribuciones de Linux y Unix libres tienen Samba como paquete nativo. Consulte el paquete o sistema de puertos de su distribuidor para obtener una instalación nativa de samba en su sistema.</p>
+        <p><a href="https://samba.plus/">https://samba.plus/</a> ofrece paquetes Samba para SLES, RHEL, Debian y AIX.
+        <p><a href="https://en.opensuse.org/Samba">http://en.openSUSE.org/Samba</a> ofrece paquetes Samba para todos los productos SuSE Linux (incluido SLES).</p>
+        <h2>Fuentes de Git</h2>
+        <p>También puede recuperar las fuentes utilizando el <a href="https://git-scm.com/"> sistema de control de código fuente GIT </a></a> . La ventaja de buscar a través de GIT es que puedes actualizar tus fuentes en cualquier momento usando un solo comando. Consulte las <a href="https://wiki.samba.org/index.php/Creating_a_Samba_patch_series">instrucciones de Git</a> .</p>
+        <h2>Herramientas</h2>
+        <ul>
+            <li><a href="https://www.samba.org/samba/GUI/">Administradores de GUI de Samba</a></li>
+            <li><a href="https://www.wireshark.org/"> Wireshark</a> (decodifica NetBIOS, SMB/CIFS y MS-RPC)</li>
+            <li><a href="https://www.tcpdump.org/">tcpdump</a>(rastreador de paquetes de línea de comando)</li>
+            <li><a href="https://www.tux.org/pub/security/secnet/tools/nat10/">Herramienta de auditoría NetBIOS (NAT)</a></li>
+            <li> <a href="https://github.com/christgau/wsdd">wsdd</a> es un demonio de descubrimiento de servicios web (WSD) escrito en Python</li>
+            <li> <a href="https://github.com/Netgear/wsdd2">wsdd2</a> es un demonio de descubrimiento WSD/LLMNR escrito en C</li>
+            <li> <a href="https://nbfw.sourceforge.net/">nbfw</a>, el reenviador NetBIOS (obsoleto)</li>
+            </ul>  
+    </div>
+      <div class="right">
+        <img src="samba.png" alt="samba2" width="50%">
+        <h2 style="color: rgb(211, 23, 23);">Sobre</h2>
+        <p>Hoy en dia Samba necesita un <a href="https://www.samba.org/samba/donations.html">dolar</a> y no un trozo de pizza. UwU</p>
+      </div>
+      <div class="right" style="font-weight: bold;color:rgb(211, 23, 23)">
+        <h2>Sitios relacionados</h2>
+        <p><a href="https://cwrap.org/">CWRAP</a></p>
+        <p><a href="https://tdb.samba.org/">TBD</a></p>
+        <p><a href="https://tevent.samba.org/">TEVENT</a></p>
+        <p><a href="https://ldb.samba.org/">LBD</a></p>
+      </div>
+    </div>
+    
+    <div style="color: rgb(211, 23, 23);background-color:#051626;text-align:center;padding:10px;margin-top:7px;"><img src="samba.png" width="10%">© copyright Alejandro Rodriguez Y Nerea Flores</div>
+    
+    </body>
+</html>
